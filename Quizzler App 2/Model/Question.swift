@@ -10,12 +10,13 @@ import Foundation
 struct Question {
     let text: String
     
-    //Multiple choice questions have multiple answers, an Array of Strings would work for our quiz data.
+    // Вопросы с множественным выбором имеют несколько ответов, поэтому для данных нашей викторины подойдет массив строк.
     let answers: [String]
-    //Look at the data in the quiz array, there is a seperate string that is the correctAnswer.
+    
+    // Посмотрите на данные в массиве теста, там есть отдельная строка, которая является правильным ответом.
     let rightAnswer: String
     
-    //The initialiser needs to be updated to match the new multiple choice quiz data.
+    // Инициализатор необходимо обновить, чтобы он соответствовал новым данным теста с множественным выбором.
     init(q: String, a: [String], correctAnswer: String) {
         text = q
         answers = a
