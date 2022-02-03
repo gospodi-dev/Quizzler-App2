@@ -15,6 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="qYB-8p-fhJ">
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="2K6-xB-4dQ"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fPW-5F-YuG">
                                 <rect key="frame" x="20" y="40" width="374" height="822"/>
                                 <subviews>
@@ -78,23 +84,17 @@
                                     </progressView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="qYB-8p-fhJ">
-                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="2K6-xB-4dQ"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.5298786670157295" green="0.14455509861408644" blue="0.686608987023132" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="qYB-8p-fhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7zp-en-vrj"/>
+                            <constraint firstAttribute="bottom" secondItem="qYB-8p-fhJ" secondAttribute="bottom" id="Ajd-yk-9lM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fPW-5F-YuG" secondAttribute="trailing" constant="20" id="D8Y-oz-QpM"/>
-                            <constraint firstItem="qYB-8p-fhJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="750" id="F9p-Jn-HPS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fPW-5F-YuG" secondAttribute="bottom" id="FPy-uG-P2s"/>
                             <constraint firstItem="fPW-5F-YuG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NKv-iD-PTt"/>
-                            <constraint firstItem="qYB-8p-fhJ" firstAttribute="centerX" secondItem="fPW-5F-YuG" secondAttribute="centerX" id="TEA-LR-NH0"/>
+                            <constraint firstItem="qYB-8p-fhJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S4B-FV-0Jj"/>
                             <constraint firstItem="fPW-5F-YuG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="TIy-eP-zYj"/>
-                            <constraint firstItem="qYB-8p-fhJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e3X-Nt-Hgk"/>
                         </constraints>
                     </view>
                     <connections>
